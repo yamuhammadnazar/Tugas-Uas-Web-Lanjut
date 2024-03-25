@@ -1,0 +1,965 @@
+* {
+    margin: 0;
+    padding : 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.body {
+background: rgb(211,236,234);
+background: linear-gradient(120deg, rgba(211,236,234,1) 39%, rgba(167,251,241,1) 94%);
+}
+
+.img{
+    height : 70px;
+    width : 280px;
+}
+
+footer {
+color : white;
+text-align: center;
+background: rgb(28,98,98);
+background: radial-gradient(circle, rgb(18, 46, 46) 14%, rgba(7,23,23,1) 66%);
+padding :15px 10px 15px 10px;
+margin-top: 5px;
+width : 100%;
+height : 100%;
+
+
+}
+
+.footer1{
+  margin-bottom: 200px;
+ }
+
+.footer2{
+ margin-top: 40%;
+
+ }
+
+.logo{
+    height : 70px;
+    width : 280px;
+    
+}
+
+.logo img {
+    height : 70px;
+    width : 280px;
+}
+nav{
+    height: 90px;
+    width : 100%;
+    margin : 0 100px 0 0;
+}
+nav .logo {
+     position: absolute;
+     margin-top: 5px;
+     margin-left: 0px;
+
+}
+
+ul{
+    padding-right: 110px;
+    list-style : none;
+}
+
+nav ul {
+    float: right;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 4px 5px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    font-family: impact;
+    text-transform: uppercase;
+    color : #153a63;
+    border-radius: 3px;
+    transition: 0.10s;
+    padding: 40px 20px 33px 20px;
+    margin: 0 5px 0 5px;
+}
+
+li a:hover {
+    background:#95f2f5;
+}
+
+.btn{
+    float: right;
+    font-size: 30px;
+    color: black;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 1250px){
+    .btn{
+        display: block;
+    }
+    ul{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    background: rgb(211,236,234);
+    background: linear-gradient(120deg, rgba(211,236,234,1) 39%, rgba(167,251,241,1) 94%);
+    transition: all .5s;
+    padding: 0;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    nav ul li{
+        margin: 10px 0;
+        line-height: 30px;
+        display: block;
+    }
+    nav ul li a{
+    font-size: 20px;
+    margin-right: 20px;
+    }
+
+    a.active, a:hover{
+        color: black;
+        background: rgba(0, 0, 0,0.6);
+
+    }
+
+}
+
+@media (max-width: 1000px){
+    nav .logo {
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    nav ul li a {
+    font-size : 16px;
+
+    }
+
+    .jarakadmin{
+        margin: 100px;
+        margin-top: 100px;
+    }
+
+
+}
+
+@media (max-width: 856px){
+    .btn{
+        display: block;
+    }
+    ul{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    background: rgb(211,236,234);
+    background: linear-gradient(120deg, rgba(211,236,234,1) 39%, rgba(167,251,241,1) 94%);
+    transition: all .5s;
+    padding: 0;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    nav ul li{
+        margin: 10px 0;
+        line-height: 30px;
+        display: block;
+    }
+    nav ul li a{
+    font-size: 20px;
+    margin-right: 20px;
+    }
+
+    a.active, a:hover{
+        color: black;
+        background: rgba(0, 0, 0,0.6);
+
+    }
+
+}
+
+.padding1 {
+padding: 10px 0px 5px 0px;
+margin-top : 0px;
+text-align: center;
+font-family: Candara;
+font-size : clamp(10px, 3vw,17px);
+
+}
+
+.container {
+    margin: 0px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.text {
+    text-align: justify;
+    font-family: Lucida Bright;
+    margin-top: 70px;
+    margin-right : 20px;
+}
+
+.p1{
+margin : 20px;
+padding : 20px;
+text-align : justify;
+margin-top: 300px;
+font-size : clamp(12px, 3vw,18px);
+background: rgb(55,238,245);
+background: linear-gradient(130deg, rgba(55,238,245,1) 0%, rgba(188,247,247,1) 23%);
+border-radius: 20px;
+border : 1px solid black;
+}
+
+.p2{
+font-size : 20px;
+}
+
+.p3{
+margin : 10px;
+padding: 5px 0 20px 0;
+text-align : center;
+font-size : clamp(12px, 3vw,18px);
+}
+
+.p4{
+padding-top: 65px;
+padding-left: 14px;
+margin: 15px;
+text-align: center;
+font-family: impact;
+font-size : clamp(12px, 3vw,30px);
+}
+
+.p5{
+margin: 15px;
+margin-bottom : 250px;
+padding : 10px 15px 10px 15px;
+text-align: justify;
+background: rgb(55,238,245);
+background: linear-gradient(130deg, rgba(55,238,245,1) 0%, rgba(169,241,241,1) 0%);
+border: 1px solid black;
+border-radius : 12px;
+}
+
+.p6{
+width: 100%;
+padding: 40px 0 120px 50%;
+text-align: justify;
+font-family: impact;
+font-size : clamp(12px, 3vw,20px);
+}
+
+.p7{
+padding: 50px 0 0 0;
+margin-top: 20px;
+text-align: center;
+font-family: impact;
+font-size : clamp(12px, 3vw,30px);
+}
+
+.p8{
+padding: 350px 0 0 0;
+margin: 15px;
+text-align: center;
+font-family: impact;
+font-size : clamp(12px, 3vw,30px);
+}
+
+.p9{
+text-align: center;
+
+}
+
+.p10{
+    padding-left: 14px;
+    margin: 15px;
+    text-align: center;
+    font-family: impact;
+    font-size : clamp(12px, 3vw,30px);
+    }
+
+.jaraktentang{
+    margin: 30px;
+    padding-bottom: 65px;
+}
+
+.jaraktentang2{
+    margin: 30px;
+    padding-bottom: 150px;
+}
+
+
+.imgdinas {
+float: left;
+width : 220px;
+height : 450px;
+background-position: right;
+}
+
+.katasambutan{
+padding : 80px 0 10px 42%;
+font-size : clamp(15px, 3vw,25px);
+}
+
+.bgberanda{
+height : 50%;
+width: 50%;
+background-position: left;
+background-repeat: no-repeat;
+border-radius: 12px;
+transition: transform 0.3s ease;
+
+}
+
+.bgberanda:hover {
+    transform: scale(1.1);
+  }
+
+.bgberanda2{
+height: 475px;
+width : 49%;
+background-position: right;
+background-repeat: no-repeat;
+border-radius: 12px;
+transition: transform 0.3s ease;
+}
+
+.bgberanda2:hover {
+    transform: scale(1.1);
+  }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.kontainer_vid {
+width: 100%;
+display: inline-block;
+}
+.textabout {
+width: 100%;
+}
+
+/* code video di beranda */
+
+.video-beranda{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    transition: transform 0.3s ease;
+}
+
+.video-beranda iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bgtentang{
+    height: 400px;
+    width : 31%;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 100px;
+    padding : 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgb(55,238,245);
+    background: linear-gradient(130deg, rgba(55,238,245,1) 0%, rgba(188,247,247,1) 23%);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.marker-img{
+padding: 5px 5px 5px 5px;
+width : 100%;
+text-align: center;
+font-size : clamp(8px, 3vw,20px);
+}
+
+.bgkontak{
+background-position: right;
+background-repeat: no-repeat;
+padding: 19px 0 0 30px;
+margin: 12px;
+}
+
+.bgkontak1{
+background-position: right;
+background-repeat: no-repeat;
+padding: 19px 0 0 30px;
+margin: 12px;
+}
+
+.bgkontak2{
+background-position: right;
+background-repeat: no-repeat;
+padding: 20px 0 0 30px;
+margin: 12px;
+}
+
+.bgkontak3{
+background-position: right;
+background-repeat: no-repeat;
+padding: 19px 0 0 30px;
+margin: 12px;
+margin-bottom: 20px;
+}
+
+
+.iknmaps{
+float: left;
+height: 150px;
+width : 100px;
+background-position: left;
+background-repeat: no-repeat;
+}
+
+.iknkontak{
+float: left;
+height: 150px;
+width : 100px;
+background-position: left;
+background-repeat: no-repeat;
+}
+
+.ikngmail{
+float: left;
+height: 150px;
+width : 100px;
+background-position: left;
+background-repeat: no-repeat;
+}
+
+.iknmedsos{
+float: left;
+height: 150px;
+width : 100px;
+background-position: left;
+background-repeat: no-repeat;
+}
+
+.backgroundkontak{
+background: rgb(55,238,245);
+background: linear-gradient(130deg, rgba(55,238,245,1) 0%, rgba(169,241,241,1) 0%);
+border: 1px solid black;
+border-radius : 12px;
+
+}
+
+#sosmed1 {
+    color: white;
+    background: rgb(24, 72, 102);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.sosmed2 {
+color: #ffffff;
+background:rgb(24, 72, 102);
+border-radius: 5px;
+padding: 5px;
+margin: 5px;
+
+}
+
+.sosmed3 {
+    color: #232323;
+}
+
+
+.f1{
+margin: 75px;
+margin-bottom: 0px;
+margin-top: 30px;
+
+}
+
+.f2{
+border: 1px solid black;
+border-radius: 0px;
+height: 50px;
+width: 30%;
+background : white;
+padding: 5px 10px 5px 10px;
+margin: 0 0 10px 0;
+font-family : impact;
+}
+
+::placeholder {
+color: black;
+}
+
+.radial{
+margin-top: 0px;
+background: rgb(228,247,247);
+background: radial-gradient(circle, rgba(228,247,247,1) 28%, rgba(171,250,250,1) 66%);
+
+}
+
+.bckg{
+background-image: url("img/bckg.jpg");
+background-size: cover;
+border-radius : 12px;
+background-repeat:no-repeat;
+}
+
+table{
+    font-size : 1em;
+    border: 1px solid black;
+    color : black;
+    border-radius : 50px;
+    background: rgb(211,236,234);
+    background: linear-gradient(38deg, rgba(211,236,234,1) 0%, rgba(133,231,220,1) 100%);
+    }
+    
+    .table1 {
+    margin-top : 3%;
+    padding-top: 5%;
+    color: #232323;
+    font-family: sans-serif;
+    
+    }
+    
+    table, th, td {
+    margin: auto;
+    border: 1px solid #999;
+    width: 50%;
+    text-align: center;
+    padding: 3%;
+    
+    }
+    
+    .table1 tr th{
+        background: #35A9DB;
+        color: #fff;
+        font-weight: normal;
+    }
+    
+    .table1 tr:hover {
+    background: rgb(211,236,234);
+    background: linear-gradient(38deg, rgba(211,236,234,1) 0%, rgba(133,231,220,1) 100%);
+    }
+    
+    .table1 tr:nth-child(even) {
+     background: rgb(211,236,234);
+     background: linear-gradient(38deg, rgba(211,236,234,1) 0%, rgba(133,231,220,1) 100%);
+    }
+/*Halaman Login*/
+
+.bodylogin {
+   font-family: Calibri, Helvetica, sans-serif;
+background: rgb(211,236,234);
+background: linear-gradient(120deg, rgba(211,236,234,1) 39%, rgba(167,251,241,1) 94%);
+
+}
+
+.tulisanlogin {
+   text-align: center;
+   font-weight: bold;
+   text-transform:  uppercase;
+}
+
+.kotak-login {
+   width: 350px;
+   background: white;
+   margin: 50px auto;
+   padding: 30px 20px;
+}
+
+.inputlogin[type=text], [type=password] {
+   width: 100%;
+   margin: 8px 0;
+   padding: 12px 20px;
+   display: inline-block;
+   border: 2px solid green;
+   box-sizing: border-box;
+}
+
+button {
+   background-color: #4CAF50;
+   width: 100%;
+   color: white;
+   padding: 15px;
+   margin: 10px 0;
+   border: none;
+   cursor: pointer;
+}
+
+button:hover {
+   opacity: 0.5;
+}
+
+span.psw {
+   float: right;
+}
+
+#footer {
+   color: white;
+   background: #00A6BB;
+   font-weight: bold;
+   text-align: center;
+   padding: 5px 5px 5px 5px;
+   bottom: 0px;
+}
+
+
+        @media screen and (max-width: 768px) {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .logo {
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            .logo img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                padding: 0;
+            }
+            
+            nav li {
+                margin-bottom: 10px;
+            }
+            
+            .padding1 {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 18px;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .imgdinas {
+                max-width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+            
+            .text {
+                margin-top: 20px;
+                text-align: center;
+            }
+            
+            .katasambutan {
+                font-size: 24px;
+            }
+            
+            .p9 {
+                font-size: 14px;
+            }
+            
+            .bgberanda {
+                max-width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+            
+            .bgberanda2 {
+                max-width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+            
+            footer {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 12px;
+            }
+            .kotakberanda {
+                flex-direction: column;
+            }
+
+            .textberanda {
+                padding-right: 0;
+                padding-bottom: 20px;
+            }
+            .logokontak {
+                flex-basis: 50%;
+            }
+
+            .container {
+                margin: 0px;
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+    @media screen and (max-width: 480px) {
+                .logokontak {
+                    flex-basis: 100%;
+                }
+                .container {
+                    margin: 0px;
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
+
+
+/*Code Halaman Menu */        
+
+.h1menu {
+    margin:10px;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+/*Code Halaman Beranda*/
+
+.kotakberanda {
+    display: flex;
+    align-items: center;
+}
+
+.textberanda {
+    margin-top: 25px;
+    margin-bottom: 300px ;
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.textberanda2 {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.texth1{
+    padding-top: 50px;
+}
+
+.texth2{
+    text-align: center;
+    padding: 10px;
+}
+
+.text2{
+    font-size: 18px;
+    line-height: 1.5;
+    border: #232323;
+    text-align: center;
+    color: black;
+    margin-bottom: 3opx;
+}
+
+.textisi {
+    margin-top: 50px;
+}
+
+.imageberanda {
+    flex: 1;
+    max-width: 100px;
+    height: 170px;
+}
+
+/* Code bagian Form */
+
+.bodyform {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.containerform {
+background-color: #fff;
+border-radius: 5px;
+padding: 20px;
+width: 400px;
+}
+
+.containerform h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.form-group-layanan {
+margin-bottom: 15px;
+}
+
+.form-group-layanan label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.panjanginput{
+width: 80%;
+}
+
+.form-group-layanan input,
+.form-group-layanan textarea {
+width: 100%;
+max-width: 96%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.form-group-layanan textarea {
+height: 80px;
+}
+
+.form-group-layanan button {
+background-color: #4CAF50;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.form-group-layanan button:hover {
+background-color: #45a049;
+}
+
+/*Halaman Kontak*/
+
+.textkontak {
+
+    margin: 50px;
+    text-align: center;
+    font-family: impact;
+    font-size : clamp(12px, 3vw,30px);
+
+}
+
+.containerkontak {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logokontak {
+    text-align: center;
+    flex-basis: 25%;
+    max-width: 250px;
+    margin: 10px;
+}
+
+.logokontak img {
+    max-width: 50%;
+    height: auto;
+}
+
+.logokontak p {
+    margin-top: 10px;
+}
+
+.jarakcontact{
+    margin: 80px;
+    margin-bottom:  250px;
+}
+.latarmaps {
+        margin: 15px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+}
+
+.latarmaps iframe {
+    border-radius: 12px;
+    height: 600px;
+    width: 90%;
+}
+
+/*Kode jam layanan*/
+
+.backgroundjamlayanan{
+    background: rgb(211,236,234);
+    background: linear-gradient(120deg, rgba(211,236,234,1) 39%, rgba(167,251,241,1) 94%);
+}
+
+/*Kode Index*/
+
+.latarkatasambutan {
+    padding: 50px;
+    width: 100%;
+    background-image: url('img/latar4.jfif');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.bodyindex {
+    background-image: url('img/latar4.jfif');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Kode about */
+
+.tugas{
+    padding: 5px 5px 5px 5px;
+    width : 100%;
+    font-size : clamp(8px, 3vw,20px);
+    margin: 20px;
+    }
+
+
+    .jarakadmin{
+        margin: 100px;
+        margin-top: 100px;
+    }
+
+
+    @media screen and (max-width: 1920px) {
+        .jarakadmin{
+            margin: 100px;
+            margin-top: 525px;
+        }
+        
+    }
